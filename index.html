@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- DEMO: remove noindex when site goes live -->
+<meta name="robots" content="noindex">
+<title>Sookwah One Stop Shop | Auto Repair &amp; Body Work — Winter Haven, FL</title>
+<meta name="description" content="Mechanical repair and body work under one roof in Winter Haven, FL. Brakes, A/C, collision and body, general repair — rated a perfect 5.0 across 165 reviews. Call or text (863) 331-5994.">
+
+<!-- Open Graph / iMessage preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sookwah One Stop Shop">
+<meta property="og:title" content="Sookwah One Stop Shop — Auto Repair &amp; Body Work, Winter Haven FL">
+<meta property="og:description" content="One stop means one stop: mechanical AND body work in the same visit. Perfect 5.0 across 165 reviews. Call or text (863) 331-5994.">
+<meta property="og:url" content="https://wilsonramstead.github.io/sookwah-one-stop/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1729792706191-08f3ed158650?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sookwah One Stop Shop — Auto Repair &amp; Body Work">
+<meta name="twitter:description" content="Mechanical and body work under one roof. Perfect 5.0 / 165 reviews. Winter Haven, FL.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1729792706191-08f3ed158650?auto=format&fit=crop&w=1200&q=80">
+<meta name="theme-color" content="#1B140F">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&family=Atma:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Sookwah One Stop Shop LLC",
+  "description": "Auto repair and body work under one roof in Winter Haven, Florida. Brakes, A/C, collision and body work, and general mechanical repair.",
+  "image": "https://images.unsplash.com/photo-1729792706191-08f3ed158650?auto=format&fit=crop&w=1200&q=80",
+  "url": "https://wilsonramstead.github.io/sookwah-one-stop/",
+  "telephone": "+18633315994",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1885 Executive Rd Ste 1875",
+    "addressLocality": "Winter Haven",
+    "addressRegion": "FL",
+    "postalCode": "33884",
+    "addressCountry": "US"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "165",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<style>
+  :root{
+    --ink:#1B140F;
+    --coffee:#241A13;
+    --coffee-2:#2F2318;
+    --coffee-3:#3A2C20;
+    --bone:#F7F0E3;
+    --bone-2:#EFE4D0;
+    --card:#FBF6EC;
+    --cream:#F4ECDE;
+    --taupe:#B7A78E;
+    --taupe-dim:#8C7E68;
+    --muted-l:#6C5E4C;
+    --line-d:#3B2C20;
+    --line-l:#E4D8C0;
+    --flame:#E85B2B;
+    --flame-hi:#FF7B47;
+    --flame-lo:#C3461B;
+    --gold:#EDAE39;
+    --gold-hi:#FFC85E;
+    --maxw:1120px;
+    --r:16px;
+    --shadow:0 18px 44px -22px rgba(20,12,6,.55);
+  }
+
+  *{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bone);
+    color:var(--ink);
+    font-family:"Atma",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    font-weight:400;
+    font-size:17px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{
+    font-family:"Marvel",system-ui,sans-serif;
+    font-weight:700;
+    line-height:1.05;
+    margin:0;
+    letter-spacing:.01em;
+    overflow-wrap:break-word;
+  }
+  p{margin:0 0 1rem;overflow-wrap:break-word}
+  .wrap{
+    width:100%;
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding-left:22px;
+    padding-right:22px;
+  }
+  .eyebrow{
+    font-family:"Marvel",sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.22em;
+    font-size:.82rem;
+    font-weight:700;
+    color:var(--flame);
+    margin:0 0 .6rem;
+    display:block;
+  }
+  .eyebrow.on-dark{color:var(--gold)}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-family:"Marvel",sans-serif;font-weight:700;
+    font-size:1.08rem;letter-spacing:.02em;
+    text-decoration:none;cursor:pointer;
+    padding:.72em 1.25em;border-radius:999px;
+    border:2px solid transparent;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    min-width:0;
+  }
+  .btn svg{width:1.05em;height:1.05em;flex:none}
+  .btn-primary{background:var(--flame);color:#fff;box-shadow:0 12px 26px -12px rgba(232,91,43,.8)}
+  .btn-primary:hover{background:var(--flame-hi);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--cream);border-color:rgba(244,236,222,.35)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-hi);transform:translateY(-2px)}
+  .btn-dark{background:var(--ink);color:var(--cream)}
+  .btn-dark:hover{background:var(--coffee-2);transform:translateY(-2px)}
+  .btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(27,20,15,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line-d);
+    color:var(--cream);
+  }
+  .bar{
+    display:flex;align-items:center;gap:14px;
+    padding-top:12px;padding-bottom:12px;
+  }
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--cream);min-width:0}
+  .brand .min0{min-width:0}
+  .brand .mark{
+    flex:none;width:42px;height:42px;border-radius:11px;
+    background:linear-gradient(150deg,var(--flame),var(--flame-lo));
+    display:grid;place-items:center;
+    font-family:"Marvel",sans-serif;font-weight:700;font-size:1.35rem;color:#fff;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.15);
+  }
+  .brand .bname{
+    font-family:"Marvel",sans-serif;font-weight:700;
+    font-size:1.28rem;line-height:1;letter-spacing:.01em;
+    white-space:nowrap;
+  }
+  .brand .bsub{
+    display:block;font-family:"Atma",sans-serif;font-weight:500;
+    font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--taupe);line-height:1;margin-top:3px;
+  }
+  .nav-links{display:flex;gap:26px;margin-left:auto;align-items:center}
+  .nav-links a{
+    text-decoration:none;color:var(--cream);font-weight:500;font-size:.98rem;
+    opacity:.85;transition:opacity .15s, color .15s;
+  }
+  .nav-links a:hover{opacity:1;color:var(--gold-hi)}
+  .header-call{margin-left:22px}
+  .header-call-mobile{margin-left:auto}
+  .header-call-mobile{display:none}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(120% 90% at 85% -10%, rgba(232,91,43,.20), transparent 55%),
+      linear-gradient(180deg,var(--coffee) 0%, var(--ink) 100%);
+    color:var(--cream);
+    position:relative;overflow:hidden;
+  }
+  .hero .wrap{
+    padding-top:64px;padding-bottom:64px;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;
+  }
+  .hero-copy{min-width:0}
+  .rating-badge{
+    display:inline-flex;align-items:center;gap:12px;
+    background:rgba(237,174,57,.12);border:1px solid rgba(237,174,57,.4);
+    border-radius:999px;padding:7px 15px 7px 12px;margin-bottom:22px;
+    max-width:100%;
+  }
+  .rating-badge .stars{color:var(--gold);letter-spacing:2px;font-size:1rem;line-height:1;flex:none}
+  .rating-badge .rt{font-family:"Marvel",sans-serif;font-weight:700;font-size:1.05rem;line-height:1;white-space:nowrap}
+  .rating-badge .rt b{color:var(--gold-hi)}
+  h1.hero-title{
+    font-size:clamp(2.7rem,7.2vw,4.6rem);
+    letter-spacing:.005em;
+    margin-bottom:.35em;
+  }
+  h1.hero-title .accent{color:var(--flame-hi)}
+  .hero-lede{
+    font-size:1.16rem;color:var(--cream);opacity:.9;
+    max-width:34ch;margin-bottom:1.6rem;
+  }
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+  .hero-note{
+    margin-top:1.35rem;font-size:.94rem;color:var(--taupe);
+    display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  }
+  .hero-note svg{width:1.05em;height:1.05em;color:var(--flame-hi);flex:none}
+
+  .hero-media{position:relative;min-width:0}
+  .hero-media .frame{
+    border-radius:22px;overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line-d);
+    aspect-ratio:4/5;
+  }
+  .hero-media .frame img{width:100%;height:100%;object-fit:cover}
+  .hero-media .chip{
+    position:absolute;left:-14px;bottom:26px;
+    background:var(--card);color:var(--ink);
+    border-radius:14px;padding:14px 18px;box-shadow:var(--shadow);
+    max-width:220px;border:1px solid var(--line-l);
+  }
+  .hero-media .chip .big{font-family:"Marvel",sans-serif;font-weight:700;font-size:1.55rem;line-height:1;color:var(--flame-lo)}
+  .hero-media .chip .lbl{font-size:.85rem;color:var(--muted-l);line-height:1.3;margin-top:3px}
+
+  /* ---------- Section scaffolding ---------- */
+  section{padding-top:76px;padding-bottom:76px}
+  .sec-head{max-width:640px;margin-bottom:40px}
+  .sec-head h2{font-size:clamp(2rem,5vw,3rem)}
+  .sec-head p{font-size:1.1rem;color:var(--muted-l);margin-top:.7rem}
+  .center{margin-left:auto;margin-right:auto;text-align:center}
+
+  /* ---------- Value strip ---------- */
+  .values{background:var(--ink);color:var(--cream)}
+  .value-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+  }
+  .value{
+    background:var(--coffee);border:1px solid var(--line-d);
+    border-radius:var(--r);
+    padding-top:26px;padding-bottom:26px;padding-left:22px;padding-right:22px;
+    min-width:0;
+  }
+  .value .ico{
+    width:44px;height:44px;border-radius:11px;flex:none;margin-bottom:14px;
+    background:rgba(232,91,43,.16);color:var(--flame-hi);
+    display:grid;place-items:center;
+  }
+  .value .ico svg{width:22px;height:22px}
+  .value h3{font-size:1.32rem;margin-bottom:.3rem}
+  .value p{font-size:.98rem;color:var(--taupe);margin:0}
+
+  /* ---------- One roof feature ---------- */
+  .oneroof{background:var(--bone)}
+  .roof-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .roof-copy{min-width:0}
+  .roof-copy h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:.6rem}
+  .roof-copy p{color:var(--muted-l);font-size:1.08rem}
+  .roof-list{list-style:none;padding:0;margin:1.3rem 0 0}
+  .roof-list li{
+    display:flex;gap:12px;align-items:flex-start;
+    padding-top:12px;padding-bottom:12px;border-top:1px solid var(--line-l);
+    font-size:1.02rem;
+  }
+  .roof-list li:first-child{border-top:none}
+  .roof-list .tick{
+    flex:none;width:26px;height:26px;border-radius:50%;margin-top:2px;
+    background:var(--flame);color:#fff;display:grid;place-items:center;font-size:.8rem;
+  }
+  .roof-list li b{font-family:"Marvel",sans-serif;font-weight:700}
+  .roof-media{display:grid;grid-template-columns:1fr 1fr;gap:16px;min-width:0}
+  .roof-media figure{margin:0;min-width:0}
+  .roof-media img{
+    width:100%;height:100%;object-fit:cover;border-radius:14px;
+    box-shadow:var(--shadow);aspect-ratio:3/4;border:1px solid var(--line-l);
+  }
+  .roof-media figure:nth-child(2){margin-top:34px}
+  .roof-media figcaption{
+    font-family:"Marvel",sans-serif;text-transform:uppercase;letter-spacing:.14em;
+    font-size:.74rem;color:var(--muted-l);margin-top:8px;text-align:center;
+  }
+
+  /* ---------- Services ---------- */
+  .services{background:var(--bone-2)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{
+    background:var(--card);border:1px solid var(--line-l);border-radius:var(--r);
+    overflow:hidden;min-width:0;box-shadow:0 10px 30px -24px rgba(20,12,6,.5);
+    display:flex;flex-direction:column;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .svc .ph{aspect-ratio:16/10;overflow:hidden;background:var(--coffee-2)}
+  .svc .ph img{width:100%;height:100%;object-fit:cover}
+  .svc .body{
+    padding-top:20px;padding-bottom:22px;padding-left:22px;padding-right:22px;
+    display:flex;flex-direction:column;gap:.35rem;
+  }
+  .svc h3{font-size:1.5rem}
+  .svc p{font-size:.99rem;color:var(--muted-l);margin:0}
+  .svc.text-only{padding-top:6px}
+  .svc.text-only .body{padding-top:26px;padding-bottom:26px}
+  .svc .tag{
+    align-self:flex-start;font-family:"Marvel",sans-serif;font-weight:700;
+    text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;
+    color:var(--flame-lo);background:rgba(232,91,43,.1);
+    border-radius:999px;padding:4px 11px;margin-bottom:2px;
+  }
+
+  /* ---------- Reviews ---------- */
+  .reviews{background:var(--ink);color:var(--cream)}
+  .rev-top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:24px;margin-bottom:38px}
+  .rev-score{flex:none}
+  .rev-score .num{font-family:"Marvel",sans-serif;font-weight:700;font-size:4.6rem;line-height:.9;color:var(--gold-hi)}
+  .rev-score .stars{color:var(--gold);letter-spacing:3px;font-size:1.15rem;margin-top:6px}
+  .rev-score .cnt{color:var(--taupe);font-size:.95rem;margin-top:4px}
+  .rev-intro{min-width:0}
+  .rev-intro h2{font-size:clamp(1.9rem,4.6vw,2.8rem)}
+  .rev-intro p{color:var(--taupe);margin-top:.5rem;max-width:46ch}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .rev{
+    background:var(--coffee);border:1px solid var(--line-d);border-radius:var(--r);
+    padding-top:26px;padding-bottom:26px;padding-left:24px;padding-right:24px;
+    min-width:0;display:flex;flex-direction:column;
+  }
+  .rev .stars{color:var(--gold);letter-spacing:2px;font-size:1rem;margin-bottom:12px}
+  .rev p.quote{font-size:1.03rem;color:var(--cream);margin:0 0 18px}
+  .rev .who{display:flex;align-items:center;gap:12px;margin-top:auto}
+  .rev .who .av{
+    flex:none;width:42px;height:42px;border-radius:50%;
+    background:linear-gradient(150deg,var(--coffee-3),var(--flame-lo));
+    display:grid;place-items:center;font-family:"Marvel",sans-serif;font-weight:700;
+    color:#fff;font-size:1.15rem;
+  }
+  .rev .who .nm{font-family:"Marvel",sans-serif;font-weight:700;font-size:1.1rem;line-height:1.1}
+  .rev .who .src{font-size:.82rem;color:var(--taupe);line-height:1.1;margin-top:2px}
+
+  /* ---------- Work gallery ---------- */
+  .work{background:var(--bone)}
+  .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .work figure{margin:0;position:relative;border-radius:var(--r);overflow:hidden;min-width:0;box-shadow:var(--shadow);border:1px solid var(--line-l)}
+  .work figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+  .work .note{
+    text-align:center;color:var(--muted-l);font-size:.92rem;margin-top:18px;
+  }
+  .work .placeholder-tag{
+    position:absolute;top:12px;left:12px;
+    background:rgba(27,20,15,.78);color:var(--cream);
+    font-family:"Marvel",sans-serif;text-transform:uppercase;letter-spacing:.12em;
+    font-size:.66rem;padding:5px 10px;border-radius:999px;
+  }
+
+  /* ---------- Visit / CTA ---------- */
+  .visit{
+    background:
+      radial-gradient(120% 100% at 10% 0%, rgba(232,91,43,.18), transparent 55%),
+      linear-gradient(180deg,var(--coffee) 0%, var(--ink) 100%);
+    color:var(--cream);
+  }
+  .visit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  .visit-copy{min-width:0}
+  .visit-copy h2{font-size:clamp(2.1rem,5.4vw,3.2rem);margin-bottom:.5rem}
+  .visit-copy p{color:var(--taupe);font-size:1.1rem}
+  .visit-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:1.5rem}
+  .info-card{
+    background:var(--coffee);border:1px solid var(--line-d);border-radius:20px;
+    padding-top:28px;padding-bottom:28px;padding-left:28px;padding-right:28px;
+    min-width:0;box-shadow:var(--shadow);
+  }
+  .info-row{display:flex;gap:14px;align-items:flex-start;padding-top:16px;padding-bottom:16px;border-top:1px solid var(--line-d)}
+  .info-row:first-child{border-top:none;padding-top:0}
+  .info-row .ico{flex:none;width:38px;height:38px;border-radius:10px;background:rgba(237,174,57,.14);color:var(--gold-hi);display:grid;place-items:center}
+  .info-row .ico svg{width:19px;height:19px}
+  .info-row .lbl{font-family:"Marvel",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;color:var(--taupe)}
+  .info-row .val{font-size:1.06rem;color:var(--cream);line-height:1.35}
+  .info-row a.val{text-decoration:none}
+  .info-row a.val:hover{color:var(--gold-hi)}
+  .dir-link{display:inline-flex;align-items:center;gap:6px;margin-top:6px;color:var(--flame-hi);font-weight:500;text-decoration:none;font-size:.95rem}
+  .dir-link:hover{text-decoration:underline}
+
+  /* ---------- Footer ---------- */
+  footer.site{background:#150F0A;color:var(--taupe);padding-top:44px;padding-bottom:40px}
+  .foot-grid{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start}
+  .foot-brand{display:flex;align-items:center;gap:11px;color:var(--cream);min-width:0}
+  .foot-brand .mark{
+    flex:none;width:38px;height:38px;border-radius:10px;
+    background:linear-gradient(150deg,var(--flame),var(--flame-lo));
+    display:grid;place-items:center;font-family:"Marvel",sans-serif;font-weight:700;color:#fff;font-size:1.2rem;
+  }
+  .foot-brand .bname{font-family:"Marvel",sans-serif;font-weight:700;font-size:1.2rem;line-height:1.05}
+  .foot-col{min-width:0}
+  .foot-col .h{font-family:"Marvel",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;color:var(--taupe-dim);margin-bottom:10px}
+  .foot-col a{display:block;color:var(--cream);text-decoration:none;font-size:1rem;margin-bottom:6px}
+  .foot-col a:hover{color:var(--gold-hi)}
+  .foot-col .txt{color:var(--taupe);font-size:1rem;line-height:1.5}
+  .foot-bottom{
+    border-top:1px solid var(--line-d);margin-top:34px;padding-top:22px;
+    display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;
+    font-size:.9rem;
+  }
+  .foot-bottom a{color:var(--gold);text-decoration:none;font-weight:500}
+  .foot-bottom a:hover{text-decoration:underline}
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:940px){
+    .hero .wrap{grid-template-columns:1fr;gap:38px}
+    .hero-media{max-width:440px}
+    .roof-grid{grid-template-columns:1fr;gap:34px}
+    .roof-media figure:nth-child(2){margin-top:0}
+    .visit-grid{grid-template-columns:1fr;gap:34px}
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
+    .rev-grid{grid-template-columns:1fr}
+    .value-grid{grid-template-columns:repeat(2,1fr)}
+    .work-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:760px){
+    .nav-links{display:none}
+    .header-call{display:none}
+    .header-call-mobile{display:inline-flex}
+  }
+  @media (max-width:560px){
+    body{font-size:16px}
+    section{padding-top:56px;padding-bottom:56px}
+    .hero .wrap{padding-top:44px;padding-bottom:48px}
+    .brand .bname{white-space:normal;font-size:.98rem;line-height:1.2;max-width:11em}
+    .brand .bsub{font-size:.64rem;letter-spacing:.1em}
+    .brand .mark{width:38px;height:38px;font-size:1.2rem}
+    .header-call-mobile{padding:.6em 1em;font-size:.98rem}
+    .svc-grid{grid-template-columns:1fr}
+    .value-grid{grid-template-columns:1fr}
+    .work-grid{grid-template-columns:1fr}
+    .hero-cta .btn,.visit-cta .btn{flex:1 1 auto;justify-content:center}
+    .rev-score .num{font-size:3.8rem}
+  }
+  @media (max-width:380px){
+    .brand .bsub{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Sookwah One Stop Shop — home">
+      <span class="mark" aria-hidden="true">S</span>
+      <span class="min0">
+        <span class="bname">Sookwah One Stop Shop</span>
+        <span class="bsub">Auto Repair &amp; Body Work</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#oneroof">One Roof</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-primary header-call" href="tel:+18633315994">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (863) 331-5994
+    </a>
+    <a class="btn btn-primary header-call-mobile" href="tel:+18633315994" aria-label="Call (863) 331-5994">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="rating-badge">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span class="rt"><b>5.0</b> &nbsp;·&nbsp; 165 reviews</span>
+        </span>
+        <h1 class="hero-title">One stop means <span class="accent">one stop.</span></h1>
+        <p class="hero-lede">Mechanical repair and body work, under the same roof, in the same visit. A dinged fender and a dead A/C condenser? Handled together — in Winter Haven.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+18633315994">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (863) 331-5994
+          </a>
+          <a class="btn btn-ghost" href="sms:+18633315994">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text the shop
+          </a>
+        </div>
+        <p class="hero-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.9 2.9M16.2 16.2l2.9 2.9M2 12h4M18 12h4"/><circle cx="12" cy="12" r="3"/></svg>
+          Expectations set on the first call — no runaround, no surprises.
+        </p>
+      </div>
+      <div class="hero-media">
+        <div class="frame">
+          <img src="https://images.unsplash.com/photo-1729792706191-08f3ed158650?auto=format&fit=crop&w=900&q=80" width="900" height="1125" alt="Well-organized repair bay with a full tool chest and classic car artwork on the wall">
+        </div>
+        <div class="chip">
+          <div class="big">Two jobs. One visit.</div>
+          <div class="lbl">Mechanical and body work handled together.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE STRIP -->
+  <section class="values">
+    <div class="wrap">
+      <div class="value-grid">
+        <div class="value reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg></div>
+          <h3>Everything under one roof</h3>
+          <p>Mechanical and body work in one place — no bouncing between two shops for one car.</p>
+        </div>
+        <div class="value reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Stays late to finish</h3>
+          <p>When a job can be done today, the team keeps at it until it's done right — Ryan included.</p>
+        </div>
+        <div class="value reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Works to save you money</h3>
+          <p>Honest about what you need and what you don't — and looks for every way to keep the bill down.</p>
+        </div>
+        <div class="value reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 10h18M5 6h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M9 15l2 2 4-4"/></svg></div>
+          <h3>Short-notice fit-ins</h3>
+          <p>In a bind? Call and ask. When there's room to squeeze you in, the shop finds it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONE ROOF FEATURE -->
+  <section class="oneroof" id="oneroof">
+    <div class="wrap">
+      <div class="roof-grid">
+        <div class="roof-copy reveal">
+          <span class="eyebrow">The one-stop advantage</span>
+          <h2>Mechanical and body — the same crew, the same day.</h2>
+          <p>Most cars need more than one kind of fix. Sookwah handles the mechanical and the body work in one place, so a single drop-off can cover it all. One customer had a fender straightened and an A/C condenser replaced in the same go — solid work, without the runaround.</p>
+          <ul class="roof-list">
+            <li><span class="tick" aria-hidden="true">✓</span><span><b>Body + mechanical together.</b> Collision repair and engine work don't have to be two trips to two shops.</span></li>
+            <li><span class="tick" aria-hidden="true">✓</span><span><b>Clear from the first call.</b> You'll know the plan and what to expect before the work starts.</span></li>
+            <li><span class="tick" aria-hidden="true">✓</span><span><b>Communicated every step.</b> No guessing what's happening with your car.</span></li>
+          </ul>
+        </div>
+        <div class="roof-media reveal">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1716385136931-39096a54870f?auto=format&fit=crop&w=600&q=80" width="600" height="800" loading="lazy" alt="Open hood with the engine bay exposed during a mechanical inspection">
+            <figcaption>Mechanical</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1666009387246-65e8ad8e7103?auto=format&fit=crop&w=600&q=80" width="600" height="800" loading="lazy" alt="Technician in a respirator spray-painting a car panel in a paint booth">
+            <figcaption>Body &amp; paint</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Repair and body work, done in one place</h2>
+        <p>From a squeaky brake to a bent panel, here's what rolls through the bays. Not sure where your job fits? Call or text and just describe it.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1759189901164-900e0afac895?auto=format&fit=crop&w=640&q=80" width="640" height="400" loading="lazy" alt="Alloy wheel with a yellow brake caliper and rotor visible through the spokes"></div>
+          <div class="body"><h3>Brakes</h3><p>Pads, rotors, and brake service — with a straight answer on what actually needs replacing and what can wait.</p></div>
+        </article>
+        <article class="svc reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1715597964018-b9ecfd21574e?auto=format&fit=crop&w=640&q=80" width="640" height="400" loading="lazy" alt="Car dashboard and climate controls seen from the driver's seat"></div>
+          <div class="body"><h3>A/C &amp; Cooling</h3><p>Florida-summer A/C work — from a warm vent to a failed condenser, back to blowing cold.</p></div>
+        </article>
+        <article class="svc reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1512080482556-ea648017576c?auto=format&fit=crop&w=640&q=80" width="640" height="400" loading="lazy" alt="Car masked off with plastic and tape inside a spray booth, ready for paint"></div>
+          <div class="body"><h3>Body Work</h3><p>Dents, dings, fenders, and panels made right — prepped, repaired, and painted in-house.</p></div>
+        </article>
+        <article class="svc reveal">
+          <div class="ph"><img src="https://images.unsplash.com/photo-1783427404359-31e2264ec9ed?auto=format&fit=crop&w=640&q=80" width="640" height="400" loading="lazy" alt="Mechanic working underneath a vehicle raised on a lift"></div>
+          <div class="body"><h3>General Repair</h3><p>Diagnostics, engine and drivability issues, and the everyday fixes that keep a car on the road.</p></div>
+        </article>
+        <article class="svc reveal text-only">
+          <div class="body">
+            <span class="tag">One-stop combos</span>
+            <h3>Two fixes, one drop-off</h3>
+            <p>Got a mechanical problem <em>and</em> body damage? Bring it once and let the shop tackle both together instead of sending you across town.</p>
+          </div>
+        </article>
+        <article class="svc reveal text-only">
+          <div class="body">
+            <span class="tag">Maintenance</span>
+            <h3>Keep-it-running care</h3>
+            <p>Routine upkeep and general maintenance to catch small problems before they turn into expensive ones.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="rev-top">
+        <div class="rev-score reveal">
+          <div class="num">5.0</div>
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <div class="cnt">across 165 reviews</div>
+        </div>
+        <div class="rev-intro reveal">
+          <span class="eyebrow on-dark">Straight from customers</span>
+          <h2>A perfect record, one honest job at a time</h2>
+          <p>165 reviews and not a rating below five stars. The themes repeat: honesty, clear communication, and going the extra mile.</p>
+        </div>
+      </div>
+      <div class="rev-grid">
+        <article class="rev reveal">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="quote">"Honest about what I needed and what I didn't, communicated every step, and stayed late to get my brakes done. You could tell they were trying to save me money."</p>
+          <div class="who"><span class="av" aria-hidden="true">A</span><span><span class="nm">April Courrege</span><span class="src">Google review</span></span></div>
+        </article>
+        <article class="rev reveal">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="quote">"Had my fender fixed and my A/C condenser replaced in one go. Solid work without the runaround — exactly what a one-stop shop should be."</p>
+          <div class="who"><span class="av" aria-hidden="true">I</span><span><span class="nm">Isak Car</span><span class="src">Google review</span></span></div>
+        </article>
+        <article class="rev reveal">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="quote">"They fit me in on short notice. The honesty and transparency are rare to find these days — I won't take my car anywhere else."</p>
+          <div class="who"><span class="av" aria-hidden="true">A</span><span><span class="nm">Ariana Lora</span><span class="src">Google review</span></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK GALLERY -->
+  <section class="work">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Around the shop</span>
+        <h2>A look at the work</h2>
+      </div>
+      <div class="work-grid">
+        <figure class="reveal"><span class="placeholder-tag">Sample</span><img src="https://images.unsplash.com/photo-1729554981212-6557ef8e4835?auto=format&fit=crop&w=560&q=80" width="560" height="420" loading="lazy" alt="Hand pointing out a crease and dent along a car door panel"></figure>
+        <figure class="reveal"><span class="placeholder-tag">Sample</span><img src="https://images.unsplash.com/photo-1512080482556-ea648017576c?auto=format&fit=crop&w=560&q=80" width="560" height="420" loading="lazy" alt="Vehicle masked and prepped inside the paint booth"></figure>
+        <figure class="reveal"><span class="placeholder-tag">Sample</span><img src="https://images.unsplash.com/photo-1577801347781-d9d9362657b7?auto=format&fit=crop&w=560&q=80" width="560" height="420" loading="lazy" alt="Two people working together on a car in the shop after hours"></figure>
+      </div>
+      <p class="note">Sample imagery for the demo — we'll swap in real photos of your shop and finished jobs before launch.</p>
+    </div>
+  </section>
+
+  <!-- VISIT / CTA -->
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="visit-grid">
+        <div class="visit-copy reveal">
+          <span class="eyebrow on-dark">Come by or reach out</span>
+          <h2>Let's get your car sorted</h2>
+          <p>Call or text and describe the problem — you'll get a straight answer and a plan. One car, one shop, one stop.</p>
+          <div class="visit-cta">
+            <a class="btn btn-primary" href="tel:+18633315994">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call (863) 331-5994
+            </a>
+            <a class="btn btn-ghost" href="sms:+18633315994">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Text us
+            </a>
+          </div>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-row">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="lbl">Shop location</div>
+              <div class="val">1885 Executive Rd, Ste 1875<br>Winter Haven, FL 33884</div>
+              <a class="dir-link" href="https://www.google.com/maps/search/?api=1&query=Sookwah+One+Stop+Shop+1885+Executive+Rd+Ste+1875+Winter+Haven+FL+33884" target="_blank" rel="noopener">
+                Get directions
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div>
+              <div class="lbl">Call</div>
+              <a class="val" href="tel:+18633315994">(863) 331-5994</a>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div>
+              <div class="lbl">Text</div>
+              <a class="val" href="sms:+18633315994">(863) 331-5994</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col" style="max-width:280px">
+        <div class="foot-brand">
+          <span class="mark" aria-hidden="true">S</span>
+          <span class="bname">Sookwah One Stop Shop</span>
+        </div>
+        <p class="txt" style="margin-top:14px">Auto repair and body work under one roof in Winter Haven, Florida. Rated a perfect 5.0 across 165 reviews.</p>
+      </div>
+      <div class="foot-col">
+        <div class="h">Visit</div>
+        <p class="txt">1885 Executive Rd, Ste 1875<br>Winter Haven, FL 33884</p>
+      </div>
+      <div class="foot-col">
+        <div class="h">Contact</div>
+        <a href="tel:+18633315994">Call (863) 331-5994</a>
+        <a href="sms:+18633315994">Text (863) 331-5994</a>
+      </div>
+      <div class="foot-col">
+        <div class="h">On the site</div>
+        <a href="#oneroof">One Roof</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Sookwah One Stop Shop LLC · Winter Haven, FL</span>
+      <span>Website by <a href="https://wilsoninnovations.net" target="_blank" rel="noopener">Wilson Innovations</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      els.forEach(function(el){el.classList.add('in');});
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
